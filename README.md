@@ -1,6 +1,6 @@
 # banco
 Cosas a mejorar:
-Código más limpio SUPER IMPORTANTE
+Código más limpio SUPER IMPORTANTE 
 Hacer más funciones para tareas que se repiten y de esa forma tener menos código
 El input number decorarlo mejor
 Hacer que no te deje ni poner numeros si esté superaría el saldo a 990 o menor a 10 
