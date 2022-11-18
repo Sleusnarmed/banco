@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cajero Autómatico</title>
+</head>
+<body>
+    <header>
+        <div class="login" id="login">
+            <div class="welcome">
+                <img src="/assets/18272e33fb8445656bf237d8c76effa4-owl-black.png" alt="Owl logo">
+                <h1>Welcome to OwlBank!</h1>
+                <h2>Sign In</h2>
+            </div>
+
+            <form action="credentials-form" id="formulario">
+                <div class="credentials-user">
+                    <label for="user">User</label>
+                    <input type="text" id="user" name="user" placeholder="Enter user" required autofocus>
+                </div>
+                <div class="credentials-password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    <label class="error-user" id="error-user">User or password incorrect!</label>
+                </div>
+                <button type="submit" class="credential-btn">Sign In</button>
+            </form>
+
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="visibility" id="bank-options">
+            <div>
+                <div class="logged-bank" id="logged-bank">
+                    <span id="welcome-sign"></span><span class="blink"> !</span>
+                </div>
+                <div>
+                    <form class="bank-form" id="bank-form">
+                        <button onClick="checkBalance()">Check Balance</button>
+                        <button onClick="accountDeposit()">Account Deposit</button>
+                        <button onClick="withdraMoney()">Withdraw Money</button>
+                        <button onClick="logoff()">Log off</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="visibility" id="bankOpts">
+            <div class="visibility" id="balance-opts">
+                <button class="bank-btn" onClick="goback()"> 
+                    <span>
+                        Check Balance
+                    </span>
+                </button>
+                <div class="check-balance">
+                    <span>Your actual balance is </span><span style="color:green" id="balance"></span>
+                </div>
+            </div>
+            <div class="visibility" id="balance-opts2">
+                <button class="bank-btn" onClick="goback()">
+                    <span>Account Deposit</span>
+                </button>
+                <div class="check-balance">
+                    <span>Your actual balance is </span><span style="color:green" id="balance1"></span>
+                    <div class="check-balance">
+                        <input type="number" name="deposit" id="deposit" class="deposit" min="0">
+                    </div>
+                    <button class="bank-btn-options" id="add2">Save</button>
+                </div>
+            </div>
+            <div class="visibility" id="balance-opts3">
+                <button class="bank-btn" onClick="goback()">
+                    <span>
+                        Withdraw Money
+                    </span>
+                </button>
+                <div class="check-balance">
+                    <span>Your actual balance is </span><span style="color:green" id="balance2"></span>
+                    <div class="check-balance">
+                        <input type="number" name="withdraw" id="withdraw" class="deposit" min="0">
+                        
+                    </div>
+                    <button class="bank-btn-options" id="add1">Save</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html> 
